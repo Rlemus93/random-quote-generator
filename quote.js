@@ -1,6 +1,6 @@
 //input: array of quotes
 //output: generates random quote 
-//
+// create a fxn that takes the array of quotes and generates a random quote 
 
 const quoteArr = [
     "The only way to do great work is to love what you do. – Steve Jobs",
@@ -51,17 +51,12 @@ const quoteArr = [
   "No act of kindness, no matter how small, is ever wasted. – Aesop",
   "Life is a succession of lessons which must be lived to be understood. – Helen Keller"
 ];
-//const answer = Math.floor(Math.random() * arrayOfQuotes.length)
+
 const quoteGenerator = (arrayOfQuotes) => {
-    //document.getElementById('quotes')
     const answer = Math.floor(Math.random() * arrayOfQuotes.length)
-    const randomQuote = arrayOfQuotes[answer]
-    let newString = ""
-    for (let i=0; i<arrayOfQuotes.length; i++){
-        if (typeof arrayOfQuotes[i] === 'string'){
-            //newString += arrayOfQuotes[i]
-        }
+    return arrayOfQuotes[answer]
     }
-    return randomQuote
-}
-console.log(quoteGenerator(quoteArr))
+    //
+const quoteInput = document.getElementById('quotes')
+quoteInput.value = quoteGenerator(quoteArr)
+//console.log(quoteGenerator(quoteArr))
