@@ -58,5 +58,16 @@ const quoteGenerator = (arrayOfQuotes) => {
     }
     //
 const quoteInput = document.getElementById('quotes')
-quoteInput.value = quoteGenerator(quoteArr)
+const resetButton = document.getElementById('reset')
+
+const setQuote = () => {
+  quoteInput.value = quoteGenerator(quoteArr);
+};
+
+//setQuote()
+//quoteInput.value = quoteGenerator(quoteArr)
+resetButton.addEventListener('click', () => {
+  setQuote();
+})
+
 //console.log(quoteGenerator(quoteArr))
