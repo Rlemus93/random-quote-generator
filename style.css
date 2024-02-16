@@ -9,14 +9,43 @@ body {
     background-position: center;
     /* background-color: aliceblue; */
 }
+
+h1 {
+    font-family:'Pacifico', cursive;
+    font-size: 75px;
+    color: darkblue;
+}
+
+
+
 input[type = "text"]{
-    width: 1000px;
+    width: 1700px;
     font-size: large;
-    /* height: 100px */
+    background-color: aqua;
+    text-align: center;
+    font-family:'Pacifico', cursive;
+    border-style: double;
+    height: 75px 
 }
 input[type="button"]{
     margin-bottom: 10px;;
-    width: 100px;
-    font-size: medium;
+    width: 200px;
+    font-size: x-large;
+    background-color:aqua ;
+    border-style: solid;
+    border-color: black;
+    border-radius: 12px;
     /* height: 100px; */
+}
+
+input[type="button"]:hover {
+    background-color: blue; /* Change the background color on hover */
+    color: white;
+    cursor: pointer;
+}
+
+ul {
+    font-size: x-large;
+    font-family:'Pacifico', cursive;
+    color: darkblue;
 }
